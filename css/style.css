@@ -1,0 +1,471 @@
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+/* nav menu */
+
+.navigation{
+    font-size: 15px;
+    background-color: #000;
+    width: 100%;
+    padding: 13px 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.navigation a{
+    color: #FFF;
+}
+
+.menu-navigation{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.nav-item, .search, .menu-more{
+   padding: 15px 20px;
+}
+
+.nav-item:hover{
+    background-color: #b3b0b0;
+    text-decoration: none;
+    color: #000;
+}
+
+.search span{
+    color: #FFF;
+}
+
+.search:hover{
+    background-color: #e42e2e;
+}
+
+/* dropdown */
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .hidden-content{
+    display: block;
+}
+
+.menu-more{
+    background-color: #000;
+    text-transform: uppercase;
+    color: #FFF;
+    border: 0;
+}
+
+#arrow-down{
+    margin-left: 3px;
+    font-size: 10px;
+    vertical-align: center;
+}
+
+.dropdown:hover .menu-more{
+    background: #b3b0b0; 
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.hidden-content{
+    background-color: #FFF;
+    text-transform: capitalize;
+    width: 180px;
+    margin-top: 13px;
+    position: absolute;
+    display: none;
+}
+
+.hidden-item{
+    padding: 8px 10px;
+}
+
+.hidden-item:hover{
+    background-color: #b3b0b0;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background-color: #b3b0b0;
+    text-decoration: none;
+    color: #000;
+}
+
+.search span{
+    color: #FFF;
+}
+
+.search:hover{
+    background-color: #e42e2e;
+}
+
+
+/* slide*/
+.slide{
+    position: relative;
+}
+
+.slide-image{
+    width: 100%;
+    margin-top: 45px;
+}
+
+.slide-content{
+    position: absolute;
+    color: #FFF;
+    top: 75%;
+    left: 35%;
+    text-align: center;
+}
+
+.slide-title{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.slide-text{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* band */
+
+.band, .tour-box, .contact{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 15px;
+
+}
+
+.section-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 45px;
+}
+
+.section-subtitle{
+    color: #b9b9b9;
+    font-style: italic;
+    padding-bottom: 12px;
+    font-size: 15px;
+}
+
+.about-text{
+    text-align: justify;
+}
+
+/* members */
+
+.members{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.member-pic{
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* tour */
+
+.tour{
+    background-color: #000;
+}
+
+#tour-title{
+    color: #FFF;
+}
+
+.tour-months{
+    background-color: #FFF;
+    width: 100%;
+    color: #7c7a7a;
+    text-align: left;
+}
+
+.month-item{
+    padding: 15px;
+    border-bottom: solid 1px #ddd;
+}
+
+.sold-out{
+    background-color: #f44336;
+    color: #FFF;
+    margin-left: 15px;
+    padding: 5px 8px;
+}
+
+.amount-left{
+    float: right;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin-right: 5px;
+}
+
+/* tour places */
+
+.tour-places{
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-item{
+    width: 31%;
+    margin: 20px 0;
+    background-color: #FFF;
+}
+
+.place-img{
+    width: 100%;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.place-img:hover{
+    opacity: 60%;
+}
+
+.place-info{
+    padding: 15px 15px;
+    text-align: justify; 
+}
+
+.place-name{
+    font-weight: bold;
+}
+
+.place-date{
+    color: #868686;
+}
+
+.buy-ticket{
+    padding: 10px 15px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    margin-top: 5px;
+}
+
+.buy-ticket:hover{
+    background-color: #b3b0b0;
+    color: #FFF;
+    color: #000;
+}
+
+/* buy ticket box */
+
+.ticket-page{
+    width: 100%;
+    position: fixed;
+    top: 100px;
+}
+
+.ticket-box{
+    width: 70%;
+    margin: 0 auto;
+    color: #FFF;
+    position: relative;
+    display: none;
+    z-index: 1;
+
+    animation-name: slidein;
+    animation-duration: 400ms;  
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidein{
+    from{
+        top: -600px;
+    }
+
+    to{
+        top: 0;
+    }
+}
+
+.ticket-header{
+    background-color: #009688;
+    text-align: center;
+}
+
+.close-box{
+    float: right;
+    display: flex;
+    align-items: flex-start;
+    background-color: #009688;
+    border: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 15px;
+}
+
+.close-box:hover{
+    background-color: #b3b0b0;
+    color: #000;
+    cursor: pointer;
+}
+
+.ticket-title{
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 36px 0;
+    margin: 0;
+}
+
+#briefcase, #cart, #user{
+    margin-right: 10px;
+}
+
+.ticket-info{
+    padding: 20px;
+    background-color: #FFF;
+    font-size: 15px;
+}
+
+.ticket-form{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.ticket-input{
+    padding: 10px;
+    color: #aaa8a8;
+    margin: 12px 0;
+    border: 1px solid #949494;
+}
+
+.pay-ticket{
+    padding: 20px 0;
+    margin: 8px 0;
+    border: 0;
+    background-color: #009688;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pay-ticket:hover{
+    background-color: #b3b0b0;
+    color: #000;
+    cursor: pointer;
+}
+
+.ticket-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.close-button{
+    background-color: #e42e2e;
+    padding: 10px 15px;
+    border: 0;
+}
+
+.close-button:hover{
+    cursor: pointer;
+    background-color: #b3b0b0;
+    color: #000;
+}
+
+.help{
+    color: #000;
+}
+
+/* contact */
+
+.contact-box{
+    display: flex;
+    width: 100%;
+}
+
+.contact-info, .contact-form{
+    width: 50%;
+    text-align: left;
+}
+
+#map, #phone, #mail{
+    margin-right: 8px;
+}
+
+.form-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-input{
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    color: #8b8a8a;
+}
+
+#message-input{
+    width: 100%;
+}
+
+.contact-button{
+    float: right;
+    background-color: #000;
+    padding: 10px 16px;
+    border: 0;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.contact-button:hover{
+    background-color: #b3b0b0;
+    color: #000;
+    cursor: pointer;
+}
+
+.map-img{
+    width: 100%;
+    filter: grayscale(50%)
+}
+
+.footer{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer i{
+    font-size: 25px;
+    color: #8a8a8a;
+}
+
+.footer-text{
+    margin: 20px 0;
+    color: #8a8a8a;
+}
+
+.footer i:hover{
+    cursor: pointer;
+    color: #bebebe;
+
+}
+
+.footer a{
+    color: #8a8a8a;
+    text-decoration: underline;
+}

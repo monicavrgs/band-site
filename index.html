@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band X</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class='header'>
+        <nav class='navigation'>
+
+            <ul class='menu-navigation'>
+                <li><a href="#" class='nav-item'>Home</a></li>
+                <li><a href="#band" class='nav-item'>Band</a></li>
+                <li><a href="#tour" class='nav-item'>Tour</a></li>
+                <li><a href="#contact" class='nav-item'>Contact</a></li>
+                
+                <div class='dropdown'>
+                    <li><a  class='menu-more'>More <i class="glyphicon glyphicon-menu-down" id='arrow-down'></i></a></li>
+                    
+                    <ul class='hidden-content'>
+                        <li class='hidden-item'>Merchandise</li>
+                        <li class='hidden-item'>Extras</li>
+                        <li class='hidden-item'>Media</li>
+                    </ul>
+                </div>
+            </ul>
+
+            <div class='search-box'><a href="#" class='search'><span class="glyphicon glyphicon-search"></span></a>
+            </div>
+        </nav>
+
+        <div class='slideshow'>            
+            <div class='slide'>
+                <img src="img/chicago.jpg" alt="picture of band" class='slide-image'>
+                <div class='slide-content'>
+                    <h3 class='slide-title'>Chicago</h3>
+                    <p class='slide-text'>Thank you Chicago - A night we won't forget</p>
+                </div>
+            </div>
+
+            <div class='slide'>
+                <img src="img/band1.jpg" alt="picture of band"  class='slide-image'>
+                <div class='slide-content'>
+                    <h3 class='slide-title'>Los Angeles</h3>
+                    <p class='slide-text'>We had the best time playing at Venice Beach</p>
+                </div>
+            </div>
+
+            <div class='slide'>
+                <img src="img/band2.jpg" alt="picture of band" class='slide-image'>
+                <div class='slide-content'>
+                    <h3 class='slide-title'>New York</h3>
+                    <p class='slide-text'>The atmosphere in NY is lorem ipsdum</p>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class='main'>
+
+        <section class='band' id='band'>
+
+            <div class='about'>
+                <h1 class='section-title'>The band</h1>
+                <h3 class='section-subtitle'>We love music</h3>
+                <p class='about-text'>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class='members'>
+                <div class='each-member'>
+                    <p>Name</p>
+                    <img src="img/bandmember.jpg" alt="picture of band member" class='member-pic'>
+                </div>
+
+                <div class='each-member'>
+                    <p>Name</p>
+                    <img src="img/bandmember.jpg" alt="picture of band member" class='member-pic'>
+                </div>
+
+                <div class='each-member'>
+                    <p>Name</p>
+                    <img src="img/bandmember.jpg" alt="picture of band member" class='member-pic'>
+                </div>
+            </div>
+        </section>
+
+        <section class='tour' id='tour'>
+            <div class='tour-box'>
+                <h2 class='section-title' id="tour-title">Tour Dates</h2>
+                <h3 class='section-subtitle'>Remember to book your tickets!</h3>
+
+                <ul class='tour-months'>
+                    <li class='month-item'>September <span class='sold-out'>Sold out</span></li>
+                    <li class='month-item'>October <span class='sold-out'>Sold out</span></li>
+                    <li class='month-item'>November <span class='amount-left'>3</span></li>
+                </ul>
+
+                <div class='tour-places'>
+
+                    <div class='place-item'>
+                        <img src="img/newyork.jpg" alt="picture of new york" class='place-img'>
+
+                        <div class='place-info'>
+                            <h4 class='place-name'>New York</h4>
+
+                            <p class='place-date'>Fri 27 Nov 2016</p>
+                            <p class='place-text'>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class='buy-ticket' onclick="slidein()">Buy tickets</button>
+                        </div>
+                    </div>
+
+                    <div class='place-item'>
+                        <img src="img/paris.jpg" alt="picture of paris" class='place-img'>
+                        <div class='place-info'>
+
+                            <h4 class='place-name'>Paris</h4>
+
+                            <p class='place-date'>Sat 28 Nov 2016</p>
+                            <p class='place-text'>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class='buy-ticket' onclick="slidein()">Buy tickets</button>
+                        </div>
+                    </div>
+
+                    <div class='place-item'>
+                        <img src="img/sanfran.jpg" alt="picture of san francisco" class='place-img'>
+
+                        <div class='place-info'>
+                            <h4 class='place-name'>San Francisco</h4>
+
+                            <p class='place-date'>Sun 29 Nov 2016</p>
+                            <p class='place-text'>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class='buy-ticket' onclick="slidein()">Buy tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='ticket-page'>
+                <div class='ticket-box' id='ticket-box'>
+                    <div class='ticket-header'>
+                        <button class='close-box' onclick="closeBox()">x</button>
+                        <h2 class='ticket-title'><i class="glyphicon glyphicon-briefcase" id='briefcase'></i>Tickets</h2>
+                    </div>
+                    
+                    <div class='ticket-info'>
+                        <form action="" class='ticket-form'>
+                            <label for="many-tickets" class='ticket-label'><i class="glyphicon glyphicon-shopping-cart" id='cart'></i>Tickets, $15 per person</label>
+                            <input type="text" id="many-tickets" placeholder="How many?" class='ticket-input' required="required">
+        
+                            <label for="email" class='ticket-label'><i class="glyphicon glyphicon-user" id='user'></i>Send To</label>
+                            <input type="text" id="email" placeholder="Enter Email" class='ticket-input' required="required">
+        
+                            <button class='pay-ticket'>Pay <i class="glyphicon glyphicon-ok"></i></button>
+                        </form>
+        
+                        <div class="ticket-footer">
+                            <button class='close-button' onclick="closeBox()">Close <i class="glyphicon glyphicon-remove"></i></button>
+                            <p class='help'>Need <a href="#">help?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='contact' id='contact'>
+            <h2 class='section-title'>Contact</h2>
+            <h3 class='section-subtitle'>Fan? Drop a note!</h3>
+
+
+            <div class="contact-box">
+                <div class='contact-info'>
+                    <p class='contact-item'><i class="glyphicon glyphicon-map-marker" id='map'></i>Chicago, US</p>
+                    <p class='contact-item'><i class="glyphicon glyphicon-earphone" id='phone'></i>Phone: +00 151515</p>
+                    <p class='contact-item'><i class="glyphicon glyphicon-envelope" id='mail'></i> Email: mail@mail.com</p>
+                </div>
+                
+                <form action="" class='contact-form'>
+
+                    <div class='form-main'>
+                        <input type="text" class='contact-input' id='name-input' placeholder="Name" required='required'>
+                        <input type="text" class='contact-input' id='email-input' placeholder="E-mail" required='required'>
+                    </div>
+
+                    <textarea id="message-input" cols="30" rows="0" class='contact-input' placeholder="Message"></textarea>
+                    <button class='contact-button'>Send</button>
+                </form>
+            </div>
+        </section>
+       
+    </main>
+
+    <img src="img/map.jpg" alt="" class='map-img'>
+
+    <footer class='footer'>
+        <i class="fa fa-facebook-official w3-hover-opacity" id='facebook'></i>
+        <i class="fa fa-instagram w3-hover-opacity" id='instagram'></i>
+        <i class="fa fa-snapchat w3-hover-opacity" id='snapchat'></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity" id='pinterest'></i>
+        <i class="fa fa-twitter w3-hover-opacity" id='twitter'></i>
+        <i class="fa fa-linkedin w3-hover-opacity" id='linkedin'></i>
+
+        <p class='footer-text'>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
